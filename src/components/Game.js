@@ -8,12 +8,16 @@ class Game extends React.Component {
     super(props);
 
     this.state = {
-      time: undefined,
+      time: undefined, 
       pancakes: [],
       cooked: 0,
       burnt: 0,
       raw: 0
     };
+  }
+
+  componentDidMount(){
+    this.setCurrentTime()
   }
 
   // TODO: create a componentDidMount() which will set the current time
